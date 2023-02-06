@@ -6,6 +6,7 @@ basic.forever(function () {
     PingUnit.Centimeters
     )
     whaleysans.showNumber(distance)
+    basic.showString("" + (distance))
     if (distance > 0 && distance < 20) {
         pins.servoWritePin(AnalogPin.P0, 90)
         basic.pause(1000)
